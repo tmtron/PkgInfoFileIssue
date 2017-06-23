@@ -1,7 +1,13 @@
 # PkgInfoFileIssue
 
-The project produces an assertion error in javac (see details below) when you start the gradle build (`gradlew.bat build`).  
-The problem occurs when you have 2 `package-info.java` files for the same package (e.g. one in `main` and one in `debug`) AND you use an annotation processor.
+The project produces an assertion error in javac (see details below) when you start the gradle build (`gradlew.bat build`).
+
+The problem occurs when
+* you have 2 `package-info.java` files for the same package (e.g. one in `main` and one in `debug`)
+* and you use any annotation in the `package-info.java` files
+* you use an annotation processor (e.g. https://immutables.github.io/)
+
+Stacktrace:
 
 ```
 :app:compileDebugJavaWithJavac
