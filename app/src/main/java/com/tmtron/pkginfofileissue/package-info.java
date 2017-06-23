@@ -1,4 +1,4 @@
-@NonNullByDefault
+@NonNull
 package com.tmtron.pkginfofileissue;
 
-import com.tmtron.mylibrary.NonNullByDefault;
+import android.support.annotation.NonNull;
