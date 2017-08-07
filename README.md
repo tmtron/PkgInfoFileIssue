@@ -2,6 +2,8 @@
 
 The project produces an assertion error in javac (see details below) when you start the gradle build (`gradlew.bat build`).
 
+see also: [Oracle Bug-Report 8183187](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=8183187)
+
 The problem occurs when
 * you have 2 `package-info.java` files for the same package (e.g. one in `main` and one in `debug`)
 * and you use any annotation in the `package-info.java` files
